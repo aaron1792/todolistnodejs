@@ -1,5 +1,5 @@
 //jshint esversion:6
-
+const cool= require('cool-ascii-faces');
 const express = require("express");
 const bodyParser = require("body-parser");
 
@@ -197,7 +197,7 @@ console.log(err);
 
 
 
-
+ .get('/cool', (req, res) => res.send(cool()))
 
 
 
