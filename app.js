@@ -1,5 +1,5 @@
 //jshint esversion:6
-const cool= require('cool-ascii-faces');
+
 const express = require("express");
 const bodyParser = require("body-parser");
 
@@ -197,7 +197,7 @@ console.log(err);
 
 
 
- .get('/cool', (req, res) => res.send(cool()))
+ 
 
 
 
@@ -205,13 +205,10 @@ app.get("/about", function(req, res) {
   res.render("about");
 });
 
-let port = process.env.PORT;
-if (port == null || port == ""){
-port = 3000;
-  }
 
 
 
-app.listen(port, function() {
+
+app.listen(3000, function() {
   console.log("Server has started succesfully");
 });
